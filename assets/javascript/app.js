@@ -24,7 +24,7 @@ $(document).ready(function () {
     $("button").on("click", function () {
         correctAnswers = [];
         wrongAnswers = [];
-        $.each($("input[type='checkbox']:checked"), function () {
+        $.each($("input[type='radio']:checked"), function () {
             if($(this).val() === "correct") {
                 correctAnswers++;
             } else {
